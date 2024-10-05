@@ -1,7 +1,7 @@
 # Description: ESPHome docker container that supports non-root operation.
 # Based on: python:slim
 # Platforms: linux/amd64, linux/arm64
-# Tag: ptr727/esphome-nonroot:latest
+# Tag: jack3308/esphome-nonroot:latest
 
 # Docker build debugging:
 # --progress=plain
@@ -42,6 +42,7 @@ RUN \
     # Install dependencies
     && apt install -y --no-install-recommends \
         build-essential \
+        iputils-ping \
         curl \
         git \
         python3-dev \
